@@ -9,7 +9,7 @@ public class CalculateCarLoan {
 		
 		Scanner scanner= new Scanner(System.in);
 	     carPrice = scanner.nextDouble();
-		 System.out.println("car price is"+carPrice);
+		 System.out.println("car price is"+ carPrice);
 		 
 		return carPrice;
 	}
@@ -22,7 +22,7 @@ public class CalculateCarLoan {
 		System.out.println("Please enter"+ strName);
 		Scanner scanner= new Scanner(System.in);
 		carPrice = scanner.nextDouble();
-	    System.out.println("The"+strName+ "is"+ carPrice);
+	    System.out.println("The"+strName+ "is"+ "RM"+ carPrice);
 		 
 		return carPrice;
 	}
@@ -46,7 +46,7 @@ public class CalculateCarLoan {
 	{
 		double carPrice = getDouble("car price");
 		if(carPrice<0) {
-			System.out.println("car price cannot be negative. Your car price is" + carPrice);
+			System.out.println("car price cannot be negative. Your car price is"+ carPrice);
 		}
 		return carPrice;
 	   
@@ -57,6 +57,7 @@ public class CalculateCarLoan {
 		 double downPayment = getDouble("down payment");
 		 if(downPayment ==0 && downPayment >=0) {
 		System.out.println("down payment can be zero but cannot be negative. Your down payment is" + downPayment);
+		
 		 }
 		 
 		return downPayment;
@@ -64,22 +65,22 @@ public class CalculateCarLoan {
 	    
 	 static int readloanPeriod()
 		{
-			int loanPeriod = getInt("loan period");
+			int loanPeriod = getInt("loan period"+ "(years)");
 			if(loanPeriod<0) {
 				System.out.println("loanPeriod cannot be negative. Your loanPeriod is" + loanPeriod);
 			}else if (loanPeriod >=5 && loanPeriod <=9) {
-			    System.out.println("loanPeriod cannot less than 5 years and cannot more than 9 years. Your loanPeriod is" + loanPeriod);
+			    System.out.println("loanPeriod cannot less than 5 years and cannot more than 9 years. Your loanPeriod is" + loanPeriod +"years");
 		}
 			return loanPeriod;
 		}
 
 	static double readInterestRate()
       {
-	double interestRate = getDouble("interest rate");
+	double interestRate = getInt("interest rate"+"(%)");
 	if(interestRate<0) {
 		System.out.println("interest rate cannot be negative. Your interest rate is" + interestRate);
 	}else if (interestRate >=3 && interestRate <=7) {
-	    System.out.println("interest rate cannot less than 3% and cannot more than 7%. Your interest rate is" + interestRate);
+	    System.out.println("interest rate cannot less than 3% and cannot more than 7%. Your interest rate is" + interestRate+"%");
 	}
 	return interestRate;
    }
