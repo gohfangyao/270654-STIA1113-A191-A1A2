@@ -20,5 +20,4 @@ and write it out as a program.
 ![image](https://user-images.githubusercontent.com/55262977/68544701-f2e7a580-0400-11ea-928c-b21d64ca8814.png)
 
 ##### Screenshot of Output
-![image](https://user-images.githubusercontent.com/55262977/68483322-4bd70280-0276-11ea-9c7c-322ceb34a8b9.png)
-
+![image](https://user-images.githubusercontent.com/55262977/68545521-d8192f00-0408-11ea-81c9-4b0850094e6a.png)
